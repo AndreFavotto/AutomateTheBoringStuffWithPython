@@ -40,7 +40,7 @@ def game():
     turn = -1
     while (not(turn =='X' or turn =='O')):
         turn = input("Which one is going to start(X or O)?:").upper()
-    count = 0
+    count = 1
     while(count <= 9):
         print(f'Turn for {turn} to play')
         move = int(input('Choose your spot: '))
