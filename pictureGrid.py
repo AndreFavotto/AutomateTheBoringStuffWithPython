@@ -1,3 +1,5 @@
+#This code converts this grid into a picture
+
 grid = [['.', '.', '.', '.', '.', '.'],
  ['.', 'O', 'O', '.', '.', '.'],
  ['O', 'O', 'O', 'O', '.', '.'],
