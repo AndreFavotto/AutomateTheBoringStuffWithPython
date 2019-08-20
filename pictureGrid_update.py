@@ -1,3 +1,5 @@
+#This code converts this grid into a picture. It's also an update of "pictureGrid.py".
+
 grid = [['.', '.', '.', '.', '.', '.'],
  ['.', 'O', 'O', '.', '.', '.'],
  ['O', 'O', 'O', 'O', '.', '.'],
