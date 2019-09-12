@@ -18,4 +18,4 @@ if ans == num:
 while (ans != num):
     ans, count = check(ans,count)
 if(ans == num):
-    print('Right answer, it took you {} tries to get it!'.format(count))
+    print(f'Right answer, it took you {count} tries to get it!')
