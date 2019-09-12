@@ -10,11 +10,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
  ['.', 'O', 'O', '.', '.', '.'],
  ['.', '.', '.', '.', '.', '.']]
 
-i = 0
-while i <= 5:
-    j = 0
-    while j <= 8:
+for i in range(len(grid[0])):
+    for j in range(len(grid)):
         print(grid[j][i], end = '')
-        j += 1
-    i += 1
     print('\n')
