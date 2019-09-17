@@ -1,4 +1,4 @@
-#This code identifies brazillian phonenumbers and email addresses in any text copied to the clipboard
+#This code identifies brazillian phone numbers and email addresses in any text copied to the clipboard
 import re, pyperclip
 
 text = pyperclip.paste()
@@ -27,11 +27,11 @@ for group in range(len(phMatches)):
         a_code = a_code[1:-1]
     if '0' in a_code: #removing 0 from area code
         a_code = a_code[1:]
-    phones.append('(' + a_code + ')' + phMatches[group][3] + '-' + phMatches[group][5])
+    phones.append('(' + a_code + ')' + phMatches[group][3] + '-' + phMatches[group][5]) #putting the numbers in a single format
 if emails == []:
     print('No emails found')
 else:
-    print(f'Emails found:\n{", ".join(emails)}')
+    print(f'Emails found:\n{", ".join(emails)}') #showing as a string instead of a list
 if phones == []:
     print('No phones found')
 else:
